@@ -18,3 +18,6 @@ def numInBox(arr, row, col, num):
             if (arr[currRow][currCol]==num):
                 return True
     return False
+
+def isNumValid(arr, row, col, num):
+    not (numInRow(arr, col, num) or numInCol(arr, col, num) or numInBox(arr, row, col, num))
